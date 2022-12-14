@@ -19,7 +19,7 @@
 <script src="assets/extra-libs/DataTables/datatables.min.js"></script>
 <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
 <?php
-if ($page == 'edit-surat-masuk') :
+if ($page == 'edit-surat-masuk' || $page == 'edit-surat-keluar') :
 ?>
 <script src="inc/js/edit-button-surat-masuk.js"></script>
 <?php endif; ?>

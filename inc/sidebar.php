@@ -12,7 +12,8 @@
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Surat</span></li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="index.php?page=surat-masuk" aria-expanded="false"><i class="mdi mdi-inbox-arrow-down"></i><span class="hide-menu">Surat Masuk</span></a>
                 </li>
-                <li class="sidebar-item mega-dropdown"> <a class="sidebar-link waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-inbox-arrow-up"></i><span class="hide-menu">Surat Keluar</span></a>
+
+                <li class="sidebar-item mega-dropdown"> <a class="sidebar-link waves-effect waves-dark" href="index.php?page=surat-keluar" aria-expanded="false"><i class="mdi mdi-inbox-arrow-up"></i><span class="hide-menu">Surat Keluar</span></a>
                 </li>
 
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Setting</span></li>

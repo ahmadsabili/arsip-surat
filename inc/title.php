@@ -16,16 +16,13 @@ if (isset($_GET['page'])) {
             $title = 'Edit Surat Masuk';
             break;
         case 'surat-keluar':
-            include 'pages/surat-keluar/index.php';
+            $title = 'Surat Keluar';
             break;
         case 'tambah-surat-keluar':
-            include 'pages/surat-keluar/create.php';
+            $title = 'Tambah Surat Keluar';
             break;
         case 'edit-surat-keluar':
-            include 'pages/surat-keluar/edit.php';
-            break;
-        case 'hapus-surat-keluar':
-            include 'pages/surat-keluar/delete.php';
+            $title = 'Edit Surat Keluar';
             break;
         case 'user':
             include 'pages/user/index.php';
@@ -38,9 +35,6 @@ if (isset($_GET['page'])) {
             break;
         case 'hapus-user':
             include 'pages/user/delete.php';
-            break;
-        default:
-            include 'pages/dashboard.php';
             break;
     }
 }
