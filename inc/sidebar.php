@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Setting</span></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">User</span></a>
+                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="index.php?page=user" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">User</span></a>
                 </li>
             </ul>
         </nav>

@@ -30,7 +30,7 @@ $no = 1;
             <div class="card">
                 <div class="card-body">
                     <h6 class="card-subtitle mb-3 float-right">
-                        <a href="index.php?page=tambah-surat-keluar" class="btn btn-sm waves-effect waves-light btn-primary"><i class="fas fa-plus"></i>&nbsp;Tambah Surat</a>
+                        <a href="index.php?page=tambah-surat-keluar" class="btn btn-sm waves-effect waves-light btn-primary"><i class="fas fa-plus"></i>&nbsp;Tambah <?= $title ?></a>
                     </h6>
                     <div class="table-responsive">
                         <table id="zero_config" class="table table-striped table-bordered">

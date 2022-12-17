@@ -18,8 +18,11 @@
 <!--This page plugins -->
 <script src="assets/extra-libs/DataTables/datatables.min.js"></script>
 <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
-<?php
-if ($page == 'edit-surat-masuk' || $page == 'edit-surat-keluar') :
-?>
+
+<?php if ($page == 'edit-surat-masuk' || $page == 'edit-surat-keluar') : ?>
 <script src="inc/js/edit-button-surat-masuk.js"></script>
+<?php endif; ?>
+
+<?php if ($page == 'tambah-user') : ?>
+<script src="inc/js/password-confirmation.js"></script>
 <?php endif; ?>

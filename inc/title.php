@@ -25,16 +25,13 @@ if (isset($_GET['page'])) {
             $title = 'Edit Surat Keluar';
             break;
         case 'user':
-            include 'pages/user/index.php';
+            $title = 'User';
             break;
         case 'tambah-user':
-            include 'pages/user/create.php';
+            $title = 'Tambah User';
             break;
         case 'edit-user':
-            include 'pages/user/edit.php';
-            break;
-        case 'hapus-user':
-            include 'pages/user/delete.php';
+            $title = 'Edit User';
             break;
     }
 }
