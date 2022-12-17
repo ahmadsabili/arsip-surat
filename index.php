@@ -1,4 +1,5 @@
 <?php
+include 'controllers/auth/session.php';
 include 'config/koneksi.php';
 include 'inc/title.php';
 ?>
