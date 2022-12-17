@@ -29,9 +29,11 @@ $no = 1;
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+                    <?php if ($_SESSION['role'] == 'admin') : ?>
                     <h6 class="card-subtitle mb-3 float-right">
                         <a href="index.php?page=tambah-surat-masuk" class="btn btn-sm waves-effect waves-light btn-primary"><i class="fas fa-plus"></i>&nbsp;Tambah <?= $title ?></a>
                     </h6>
+                    <?php endif; ?>
                     <div class="table-responsive">
                         <table id="zero_config" class="table table-striped table-bordered">
                             <thead>
@@ -64,7 +66,9 @@ $no = 1;
                                         <div class="button-group d-flex flex-row">
                                             <a href="uploads/surat-masuk/<?= $surat['file_surat'] ?>" class="btn btn-sm waves-effect waves-light btn-primary" title="Lihat File" target="_blank"><i class="fas fa-file-pdf"></i></a>
                                             <a href="index.php?page=edit-surat-masuk&id_surat_masuk=<?= $surat['id_surat_masuk'] ?>" class="btn btn-sm waves-effect waves-light btn-info" title="Detail"><i class="fas fa-eye"></i></a>
+                                            <?php if ($_SESSION['role'] == 'admin') : ?>
                                             <a href="controllers/surat-masuk/delete.php?id_surat_masuk=<?= $surat['id_surat_masuk'] ?>" class="btn btn-sm waves-effect waves-light btn-danger" title="Hapus" onclick="return confirm('Hapus data?')"><i class="fas fa-trash"></i></a>
+                                            <?php endif; ?>
                                         </div>
                                     </td>
                                 </tr>

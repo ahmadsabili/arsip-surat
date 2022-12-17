@@ -1,4 +1,14 @@
-<!-- Bread crumb and right sidebar toggle -->
+<?php
+include 'config/koneksi.php';
+$today = date("Y-m-d");
+
+$surat_masuk_today = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM surat_masuk WHERE tanggal_diterima = '$today'"));
+$surat_masuk_total = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM surat_masuk"));
+
+$surat_keluar_today = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM surat_keluar WHERE tanggal_surat = '$today'"));
+$surat_keluar_total = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM surat_keluar"));
+
+?>
 <div class="page-breadcrumb">
     <div class="row">
         <div class="col-5 align-self-center">
@@ -18,9 +28,6 @@
         </div>
     </div>
 </div>
-<!-- End Bread crumb and right sidebar toggle -->
-
-<!-- Container fluid  -->
 <div class="container-fluid">
     <!-- Sales chart -->
     <div class="card-group">
@@ -34,7 +41,7 @@
                                 <p class="font-16 m-b-5">Surat Masuk Hari Ini</p>
                             </div>
                             <div class="ml-auto">
-                                <h1 class="font-light text-right">23</h1>
+                                <h1 class="font-light text-right"><?= $surat_masuk_today ?></h1>
                             </div>
                         </div>
                     </div>
@@ -58,7 +65,7 @@
                                 <p class="font-16 m-b-5">Surat Keluar Hari Ini</p>
                             </div>
                             <div class="ml-auto">
-                                <h1 class="font-light text-right">169</h1>
+                                <h1 class="font-light text-right"><?= $surat_keluar_today ?></h1>
                             </div>
                         </div>
                     </div>
@@ -82,7 +89,7 @@
                                 <p class="font-16 m-b-5">Total Surat Masuk</p>
                             </div>
                             <div class="ml-auto">
-                                <h1 class="font-light text-right">157</h1>
+                                <h1 class="font-light text-right"><?= $surat_masuk_total ?></h1>
                             </div>
                         </div>
                     </div>
@@ -106,7 +113,7 @@
                                 <p class="font-16 m-b-5">Total Surat Keluar</p>
                             </div>
                             <div class="ml-auto">
-                                <h1 class="font-light text-right">236</h1>
+                                <h1 class="font-light text-right"><?= $surat_keluar_today ?></h1>
                             </div>
                         </div>
                     </div>

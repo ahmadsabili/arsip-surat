@@ -60,31 +60,55 @@ include 'inc/title.php';
                     include 'pages/surat-masuk/index.php';
                     break;
                 case 'tambah-surat-masuk':
-                    include 'pages/surat-masuk/create.php';
+                    if ($_SESSION['role'] == 'admin') {
+                        include 'pages/surat-masuk/create.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 case 'edit-surat-masuk':
-                    include 'pages/surat-masuk/edit.php';
+                    if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'user') {
+                        include 'pages/surat-masuk/edit.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 case 'surat-keluar':
                     include 'pages/surat-keluar/index.php';
                     break;
                 case 'tambah-surat-keluar':
-                    include 'pages/surat-keluar/create.php';
+                    if ($_SESSION['role'] == 'admin') {
+                        include 'pages/surat-keluar/create.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 case 'edit-surat-keluar':
-                    include 'pages/surat-keluar/edit.php';
+                    if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'user') {
+                        include 'pages/surat-keluar/edit.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 case 'user':
                     include 'pages/user/index.php';
                     break;
                 case 'tambah-user':
-                    include 'pages/user/create.php';
+                    if ($_SESSION['role'] == 'admin') {
+                        include 'pages/user/create.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 case 'edit-user':
-                    include 'pages/user/edit.php';
+                    if ($_SESSION['role'] == 'admin') {
+                        include 'pages/user/edit.php';
+                    } else {
+                        include 'pages/error-404.php';
+                    }
                     break;
                 default:
-                    include 'pages/dashboard.php';
+                    include 'pages/error-404.php';
                     break;
             }
         }

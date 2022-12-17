@@ -16,9 +16,11 @@
                 <li class="sidebar-item mega-dropdown"> <a class="sidebar-link waves-effect waves-dark" href="index.php?page=surat-keluar" aria-expanded="false"><i class="mdi mdi-inbox-arrow-up"></i><span class="hide-menu">Surat Keluar</span></a>
                 </li>
 
+                <?php if ($_SESSION['role'] == 'admin') : ?>
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Setting</span></li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="index.php?page=user" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">User</span></a>
                 </li>
+                <?php endif ?>
             </ul>
         </nav>
         <!-- End Sidebar navigation -->

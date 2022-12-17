@@ -31,8 +31,10 @@ $sifat = mysqli_query($koneksi, "SELECT * FROM sifat_surat");
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+                    <?php if ($_SESSION['role'] == 'admin') : ?>
                     <button class="btn btn-warning" id="edit-button">Edit Data</button>
                     <button class="btn btn-secondary" id="cancel-edit-button" style="display: none;">Batal Edit Data</button>
+                    <?php endif; ?>
                     <form action="controllers/surat-masuk/update.php" class="form" method="POST" enctype="multipart/form-data">
                         <input type="hidden" name="id_surat_masuk" value="<?= $surat_masuk['id_surat_masuk'] ?>">
                         <div class="form-group m-t-40 row">
