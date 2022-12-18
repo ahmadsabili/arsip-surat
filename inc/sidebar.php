@@ -6,7 +6,7 @@
             <ul id="sidebarnav">
                 <!-- Sidebar Menu -->
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Dashboard</span></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="/" aria-expanded="false"><i class="mdi mdi-av-timer"></i><span class="hide-menu">Dashboard </span></a>
+                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="index.php" aria-expanded="false"><i class="mdi mdi-av-timer"></i><span class="hide-menu">Dashboard </span></a>
                 </li>
 
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Surat</span></li>
