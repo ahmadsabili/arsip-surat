@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
+    <title>E-Arsip Surat | Login</title>
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
 </head>

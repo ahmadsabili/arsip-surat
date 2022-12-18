@@ -120,8 +120,7 @@ include 'inc/title.php';
 
             <!-- footer -->
             <footer class="footer text-center">
-                All Rights Reserved by Nice admin. Designed and Developed by
-                <a href="https://wrappixel.com">WrapPixel</a>.
+                All Rights Reserved.
             </footer>
             <!-- End footer -->
         </div>
