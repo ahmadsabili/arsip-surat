@@ -113,7 +113,7 @@ $surat_keluar_total = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM sura
                                 <p class="font-16 m-b-5">Total Surat Keluar</p>
                             </div>
                             <div class="ml-auto">
-                                <h1 class="font-light text-right"><?= $surat_keluar_today ?></h1>
+                                <h1 class="font-light text-right"><?= $surat_keluar_total ?></h1>
                             </div>
                         </div>
                     </div>
